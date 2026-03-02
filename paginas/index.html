@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Gerenciador de Finanças Pessoais</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <img class="logo" src="/assets/logo.png" alt="Logo">
+            <h1>GFP</h1>
+        </div>
+        <div class="container-user">
+            <img src="/assets/avatar.png" alt="usuario">
+            <span class="name-user">Nome Usuário</span>
+        </div>
+    </header>
+    <main>
+    <section class="content">
+        <section class="saldo">
+            <section>
+                <div class="valor">
+                    <div>
+                        <span>Saldo</span>
+                        <h1 class="valor-em-conta"><span id="valorTotal"></span></h1>
+                        <button onclick="window.location.href='./sacar.html'">Sacar</button>
+                        <button onclick="window.location.href='./depositar.html'">Depositar</button>
+                    </div>
+                </div>
+                <div style="width: 500px; height: 500px;">
+                         <canvas id="graficoDespesas"></canvas>
+                         <!-- <button onclick="window.location.href='./sacar.html'">Sacar</button>
+                        <button onclick="window.location.href='./depositar.html'">Depositar</button>-->
+                        
+                </div>
+                
+            </section>
+            
+            <section class="extrato">
+                <h2>Extrato</h2>
+                <section class="movimentacoes">
+                    <div class="movimentacao">
+                        <div class="nome-estante">
+                            <span>João</span>
+                            <span>30/02/2026 15:30</span>
+                        </div>
+                        <span style="color: green;">R$ 500,00</span>
+                    </div>
+                    <div class="movimentacao">
+                        <div class="nome-estante">
+                            <span>Maria</span>
+                            <span>30/02/2026 15:30</span>
+                        </div>
+                        <span style="color: red;">R$ -800,00</span>
+                    </div>
+                </section>
+            </section>
+        </section> <section class="graficos-container">
+            <h1>Investimentos</h1>
+            <div style="width: 1400px; height: auto;">
+            <canvas id="graficoEvolucaoInvestimentos"></canvas>
+            </div>
+        </section>
+
+        <section class="graficos-container">
+            
+            <h1>Investimentos de ações</h1>
+            <div style="width: 1400px; height: auto;">
+            <canvas id="graficoPerformanceAcoes"></canvas>
+            </div>
+        </section>
+    </section>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/script/javascript.js"></script>
+</body>
+</html>

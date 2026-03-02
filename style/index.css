@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    padding: 8px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+
+    img {
+        height: 60px;
+        width: 60px;
+    }
+
+    span {
+        font-weight: bold;
+        color: gray;
+    }
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: cadetblue;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    padding: 12px;
+    width: 100%;
+    background-color: rgb(193, 193, 193);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.valor-em-conta {
+    color: cadetblue;
+    font-size: 40px;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+input {
+    height: 30px;
+    font-size: 15px;
+    padding: 8px;
+    border: 2px solid cadetblue;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: hidden;
+    background-color: cadetblue;
+    color: white;
+    border: gray;
+    font-size: 20px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.content {
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.saldo {
+    width: 100%;
+    border-bottom: 2px solid cadetblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    
+    section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        display: flex;
+        gap: 100px;
+    }
+}
+
+.valor {
+    
+    width: 40vw;
+    height: 40vh;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px;
+    border: 4px solid cadetblue;
+
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    */
+    background-color: rgb(238, 238, 238);
+
+    
+}
+
+.botoes {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+
+.extrato {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.movimentacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movimentacao {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.nome-estante {
+    display: flex;
+    gap: 60px;
+}
+
+.content h1 {
+    color: cadetblue;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+
+
+.graficos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    h1 {
+        color: cadetblue;
+        margin-bottom: 20px;
+    }
+}

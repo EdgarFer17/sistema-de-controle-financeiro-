@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Finanças Pessoais</title>
+    <link rel="stylesheet" href="/style/sacar-depositar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Depositar</h1>
+        <div class="campos">
+            <label> Valor para Deposito: </label>
+            <input type="number" id="depositarValor" placeholder="Valor a depositar">
+        </div>
+        <div class="campos">
+            <label>Chave PIX: </label>
+            <input type="text" id="chavePix" placeholder="Chave Pix">
+        </div>
+        <button onclick="depositar()">Depositar</button>
+        <button onclick="window.location.href='./index.html'">Voltar</button>
+    </div>
+</body>
+<script src="/script/javascript.js"></script>
+</html>

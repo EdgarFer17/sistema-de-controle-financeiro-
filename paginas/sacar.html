@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Finanças Pessoais</title>
+    <link rel="stylesheet" href="/style/sacar-depositar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sacar</h1>
+        <div class="campos">
+            <label>Valor para Saque: </label>
+            <input type="number" id="sacarValor" placeholder="Valor a sacar">
+        </div>
+        <div class="campos">
+            <label>Senha para saque: </label>
+            <input type="text" id="senhaSaque" placeholder="Senha para sacar">
+        </div>
+        <button onclick="sacar()">Sacar</button>
+        <button onclick="window.location.href='./index.html'">Voltar</button>
+    </div>
+</body>
+<script src="/script/javascript.js"></script>
+</html>
